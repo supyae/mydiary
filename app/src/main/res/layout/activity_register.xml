@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTRATION"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/diary2"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:id="@+id/tv_View"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id = "@+id/et_name"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "Enter Name"
+            android:focusable = "true"
+            android:layout_marginTop="10dp"
+            android:textColorHighlight = "#ff7eff15"
+            android:textColorHint = "#eadddd"
+            android:inputType="textEmailAddress"
+            android:layout_below = "@+id/imageView"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_alignParentEnd = "true" />
+
+        <EditText
+            android:id = "@+id/et_email"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "Enter Email"
+            android:focusable = "true"
+            android:layout_marginTop="10dp"
+            android:textColorHighlight = "#ff7eff15"
+            android:textColorHint = "#eadddd"
+            android:inputType="textEmailAddress"
+            android:layout_below = "@+id/et_name"
+            android:layout_alignParentLeft = "true"
+            android:layout_alignParentStart = "true"
+            android:layout_alignParentRight = "true"
+            android:layout_alignParentEnd = "true" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@+id/et_email"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etusername"
+            android:layout_alignEnd="@+id/etusername"
+            android:layout_marginTop="10dp"
+            android:textColorHint = "#eadddd"
+            android:hint="Password" />
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/btn_layout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="20dp">-->
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:text="Cancel"
+                style="@style/btn_primary"
+                android:background="@drawable/btn_background_one"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:text="Register"
+                style="@style/btn_primary"
+                android:background="@drawable/btn_background_one"
+                android:layout_alignParentBottom="true"/>
+
+        <!--</RelativeLayout>-->
+
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_layout"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorText"
+            android:textColor="@color/colorText"
+            android:text="@string/login" />
+
+    </LinearLayout>
+
+</RelativeLayout>
